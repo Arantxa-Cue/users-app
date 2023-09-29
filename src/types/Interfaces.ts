@@ -41,14 +41,13 @@ export interface UseUsers {
   setUserFilter: Dispatch<SetStateAction<number | null>>
 }
 
-export interface UserEdited {
-  id: number
-  editedUser: User
-}
-
 export interface FilterUser {
   searchQuery: string
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>
   filteredUsers: User[] | null
   filterUsers: () => void
-};
+}
+
+export interface Button {
+  id: number
+}

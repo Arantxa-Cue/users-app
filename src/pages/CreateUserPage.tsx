@@ -4,6 +4,7 @@ import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { Alert, Button } from '@mui/material'
 import useCreateUser from '../hooks/useCreateUser'
+import GoBackButton from '../components/GoBackButton'
 
 const CreateUserPage = (): JSX.Element => {
   const {
@@ -34,6 +35,9 @@ const CreateUserPage = (): JSX.Element => {
             <p>{errors.email?.message}</p>
             <Button variant="contained" type="submit">Send</Button>
         </form>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
+        <GoBackButton />
+        </div>
         </Box>
   )
 }

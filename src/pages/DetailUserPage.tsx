@@ -16,7 +16,7 @@ const DetailUserPage = (): JSX.Element => {
 
   return (
       <>
-        <Box sx={{ textAlign: 'center', margin: 2 }}>
+        <Box sx={{ textAlign: 'center', margin: 2, marginTop: 20 }}>
         <UserCard id={data.id} first_name={data.first_name} last_name={data.last_name} email={data.email} avatar={data.avatar} />
         <GoBackButton />
         </Box>
